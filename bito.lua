@@ -326,6 +326,7 @@ function display.setResolution(width, height)
 
     if display.imageData then display.imageData:release() end
     display.imageData = newImageData(display.width, display.height)
+    if display.image then display.image:release() end
     display.image = love.graphics.newImage(display.imageData.data)
 
     display.width_1, display.height_1 = width - 1, height - 1
