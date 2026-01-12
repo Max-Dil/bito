@@ -970,5 +970,6 @@ bito.getResolution = display.getResolution
 bito.graphics      = graphics
 
 drawState.font = graphics.newFont(1)
+graphics.setColor(255, 255, 255)
 
 return bito
