@@ -332,6 +332,10 @@ function display.setResolution(width, height)
     display.width_1, display.height_1 = width - 1, height - 1
 end
 
+function display.resize(w, h)
+    display.scale = math.min(w / display.width, h / display.height)
+end
+
 function display.getResolution()
     return display.width, display.height
 end
@@ -967,6 +971,7 @@ bito.getPixel      = display.getPixel
 bito.setPixel      = display.setPixel
 bito.setResolution = display.setResolution
 bito.getResolution = display.getResolution
+bito.resize        = display.resize
 
 bito.graphics      = graphics
 

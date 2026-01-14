@@ -16,6 +16,9 @@ function love.update(dt)
         player.y = player.y + 60 * dt
     end
 end
+function love.resize(w, h)
+    bito.resize(w, h)
+end
 function love.draw()
     local w, h = bito.getResolution()
     bito.clear()

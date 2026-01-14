@@ -10,6 +10,7 @@ local bito = require('bito')           | Load library
 
 bito.draw()                            | Draw a virtual monitor
 bito.clear()                           | It clears the virtual monitor very quickly by filling it with black
+bito.resize(width, heght)              | Callback love.resize
 
 local r, g, b, a = bito.getPixel(x, y) | Get the pixel color in the virtual monitor
 
